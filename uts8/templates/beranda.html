@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card profile">
+    <img src="{{ url_for('static', filename='img/profil.jpg') }}" alt="Foto Profil" class="avatar">
+
+    <h2>La Datri</h2>
+
+    <p class="role">Backend Developer | Python</p>
+
+    <p class="desc">
+        Software Engineer yang berfokus pada Pengembangan Backend dengan pengalaman 4 tahun menggunakan Java dan Python. Berpengalaman dalam merancang arsitektur microservices dan mengelola database berskala besar. Memiliki semangat tinggi dalam memecahkan masalah kompleks dan optimasi performa sistem.
+    </p>
+</div>
+
+{% endblock %}

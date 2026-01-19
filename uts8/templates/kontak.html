@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card">
+    <h3>Kontak</h3>
+    <p>Email: datrih950@gmail.com</p>
+
+    <div class="contact-nav">
+        <a href="#" class="contact-item whatsapp">WhatsApp</a>
+        <a href="#" class="contact-item facebook">Facebook</a>
+        <a href="#" class="contact-item instagram">Instagram</a>
+        <a href="#" class="contact-item github">GitHub</a>
+    </div>
+</div>
+
+<div class="card">
+    <h3>Dokumen</h3>
+    <a href="{{ url_for('download_pdf') }}" class="btn green">Download CV (PDF)</a>
+    <a href="{{ url_for('download_docx') }}" class="btn blue">Download CV (DOCX)</a>
+</div>
+
+{% endblock %}
